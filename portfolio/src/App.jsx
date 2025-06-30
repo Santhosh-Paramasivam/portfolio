@@ -2,27 +2,27 @@ import './index.css'
 import Links from './Links'
 import ProjectCarousel from './ProjectCarousel'
 import Brand from './Brand'
+import Projects from './Projects'
 
 function App() {
     return <div className='d-flex flex-column'>
         <div className='d-flex flex-row'>
-            <div className="d-flex flex-column justify-content-center px-5" style={{ border: "solid 1px black", width: "576px", height: "100vh", backgroundColor: "#15102E" }}>
+            <div className="d-flex flex-column justify-content-center px-5" style={{ width: "576px", height: "100vh", backgroundColor: "#15102E" }}>
                 <div className="flex-fill"></div>
                 <Brand />
                 <Links />
                 <div className="flex-fill"></div>
             </div>
-            <div className='d-flex flex-column justify-content-center align-items-center'>
+            <div className='container px-0 d-flex flex-column' style={{backgroundColor: "#15102E"}}>
                 <div className='flex-fill'></div>
                 <ProjectCarousel />
                 <div className='flex-fill'></div>
             </div>
         </div>
-        <div className='d-flex flex-row'>
-            <div className="bg-body-primary" style={{ border: "solid 1px black", width: "400px", height: "100vh" }}>
-                <h1>Hello</h1>
+            <div className="d-flex flex-column pt-4" style={{ height: "100vh", backgroundColor: "#211A43" }}>
+                <h3 style={{ fontFamily: 'imprima', color: '#96DEFF' }} className="mx-2 py-0 my-0 fs-1 px-5 align-self-center">Projects</h3>
+                <Projects/>
             </div>
-        </div>
     </div>
 }
 export default App
