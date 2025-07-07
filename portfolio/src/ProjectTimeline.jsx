@@ -1,4 +1,5 @@
-import { useRef, useEffect, use } from "react"
+import { useRef, useEffect } from "react"
+import ProjectCard from "./ProjectCard"
 
 function ProjectTimeline() {
     const canvasRef = useRef('')
@@ -6,23 +7,23 @@ function ProjectTimeline() {
     function drawCircle(context, x) {
         context.fillStyle = '#96DEFF'
         context.beginPath()
-        context.arc(x, 125, 8, 0, 2 * Math.PI, true)
+        context.arc(x, 50, 8, 0, 2 * Math.PI, true)
         context.fill()
     }
 
     function drawHorizontalLine(context, x1, x2) {
         context.beginPath()
         context.strokeStyle = '#96DEFF'
-        context.moveTo(x1, 125)
-        context.lineTo(x2, 125)
+        context.moveTo(x1, 50)
+        context.lineTo(x2, 50)
         context.lineWidth = "5px"
         context.stroke()
     }
 
     function drawVerticalLine(context, x) {
         context.beginPath()
-        context.moveTo(x, (125 - 6))
-        context.lineTo(x, (125 + 6))
+        context.moveTo(x, (50 - 6))
+        context.lineTo(x, (50 + 6))
         context.lineWidth = "5px"
         context.stroke()
     }
@@ -41,9 +42,15 @@ function ProjectTimeline() {
         // drawHorizontalLine(context, 200, 250)
 
         // drawCircle(context, 250)
-        let scale = 100
+        let years = ['June 2025', 'June 2024', 'June 2023', 'June 2022']
+        let scale = 200
+        var y = 0
         for (let x = 50; x <= 50 + scale * 8; x += scale * 4) {
             drawCircle(context, x)
+            context.font = '16px Helvetica'
+            context.fillStyle = '#96DEFF'
+            context.fillText(years[y], x - 40, 50 + 35)
+            y++
             drawHorizontalLine(context, x, x + scale)
             drawVerticalLine(context, x + scale)
             drawHorizontalLine(context, x + scale, x + scale * 2)
@@ -55,22 +62,38 @@ function ProjectTimeline() {
         }
 
 
-        drawCircle(context, 1250)
+        drawCircle(context, 2450)
+        context.font = '16px sans-serif'
+        context.fillStyle = '#96DEFF'
+        context.fillText(years[y], 2450 - 40, 50 + 35)
 
     }, [])
 
-    return <div style={{ overflowX: 'scroll' }}>
-        <div className="grid">
-            <div className="col-1">
-                <div className="card">
-                    <h1 className="card-title">
-                        Hello
-                    </h1>
-                </div>
-            </div>
+    return <div style={{ overflowX: 'scroll', scrollbarColor: '#f1f1f1 #6F66FD '}}>
+        <div className="d-flex flex-row">
+            <ProjectCard 
+                title="CampusFind" 
+                image="campusfind.png" 
+                tools={['Flutter', 'Flask', 'Firebase','Arduino']} 
+                description={"Quickly locate coworkers and teammates within large campuses with this mobile app"}
+            />
         </div>
-        <canvas ref={canvasRef} height={"250px"} width={"1300px"} />
+        <canvas ref={canvasRef} height={"100px"} width={"2700px"} />
     </div>
 }
 
 export default ProjectTimeline
+
+/*
+
+Projects to add :
+
+FeedFirst,
+Contact-Ms,
+Smart-Food-Bin,
+CampusFind-Admin
+CampusFind,
+HDP,
+WisdomBot
+
+*/
