@@ -3,6 +3,7 @@ import Links from './Links'
 import ProjectCarousel from './ProjectCarousel'
 import Brand from './Brand'
 import Projects from './Projects'
+import Skills from './Skills'
 
 function App() {
     return <div className='d-flex flex-column'>
@@ -22,6 +23,10 @@ function App() {
             <div className="d-flex flex-column pt-4" style={{ height: "100vh", backgroundColor: "#211A43" }}>
                 <h3 style={{ fontFamily: 'imprima', color: '#96DEFF' }} className="mx-2 py-0 my-0 fs-1 px-5 align-self-center">Projects</h3>
                 <Projects/>
+            </div>
+            <div className="d-flex flex-column pt-4" style={{ height: "100vh", backgroundColor: "#15102E" }}>
+                <h3 style={{ fontFamily: 'imprima', color: '#96DEFF' }} className="mx-2 py-0 my-0 fs-1 px-5 align-self-center">Skills</h3>
+                <Skills/>
             </div>
     </div>
 }

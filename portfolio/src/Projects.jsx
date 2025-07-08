@@ -1,9 +1,10 @@
 import './ProjectTabs.css'
 import { useState } from "react"
 import ProjectTimeline from "./ProjectTimeline"
+import FeaturedProjects from './FeaturedProjects'
 
 function Projects() {
-    const [currentlyActive, setCurrentlyActive] = useState('timeline')
+    const [currentlyActive, setCurrentlyActive] = useState('featured')
 
     function activate(newActive) {
         setCurrentlyActive(newActive)
@@ -15,11 +16,12 @@ function Projects() {
                 <button className={currentlyActive === 'timeline' ? "nav-link active" : "nav-link"} onClick={() => activate('timeline')}>Timeline</button>
             </li>
             <li className="nav-item">
-                <button className={currentlyActive === 'link' ? "nav-link active" : "nav-link"} onClick={() => activate('link')}>Link</button>
+                <button className={currentlyActive === 'featured' ? "nav-link active" : "nav-link"} onClick={() => activate('featured')}>Featured</button>
             </li>
         </ul>
         <div className="card-body">
             {currentlyActive === 'timeline' && <ProjectTimeline/>}
+            {currentlyActive === 'featured' && <FeaturedProjects/>}
         </div>
     </div>
 }

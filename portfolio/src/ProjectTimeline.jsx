@@ -69,12 +69,19 @@ function ProjectTimeline() {
 
     }, [])
 
-    return <div style={{ overflowX: 'scroll', scrollbarColor: '#f1f1f1 #6F66FD '}}>
-        <div className="d-flex flex-row">
-            <ProjectCard 
-                title="CampusFind" 
-                image="campusfind.png" 
-                tools={['Flutter', 'Flask', 'Firebase','Arduino']} 
+    return <div style={{ overflowX: 'scroll', scrollbarColor: '#f1f1f1 #6F66FD ' }}>
+        <div className="d-flex flex-row" style={{width: '2700px', gap: '20px'}}>
+            <ProjectCard
+                title="CampusFind"
+                image="campusfind.png"
+                tools={['Flutter', 'Flask', 'Firebase', 'Arduino']}
+                description={"Quickly locate coworkers and teammates within large campuses with this mobile app"}
+            />
+            <canvas width={"50px"}></canvas>
+            <ProjectCard
+                title="CampusFind"
+                image="campusfind.png"
+                tools={['Flutter', 'Flask', 'Firebase', 'Arduino']}
                 description={"Quickly locate coworkers and teammates within large campuses with this mobile app"}
             />
         </div>
