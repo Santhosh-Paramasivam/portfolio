@@ -4,6 +4,7 @@ import ProjectCarousel from './ProjectCarousel'
 import Brand from './Brand'
 import Projects from './Projects'
 import Skills from './Skills'
+import Frameworks from './Frameworks'
 
 function App() {
     return <div className='d-flex flex-column'>
@@ -25,8 +26,10 @@ function App() {
                 <Projects/>
             </div>
             <div className="d-flex flex-column pt-4" style={{ height: "100vh", backgroundColor: "#15102E" }}>
-                <h3 style={{ fontFamily: 'imprima', color: '#96DEFF' }} className="mx-2 py-0 my-0 fs-1 px-5 align-self-center">Skills</h3>
+                <h3 style={{ fontFamily: 'imprima', color: '#96DEFF' }} className="mx-2 py-0 my-0 fs-1 px-5 align-self-center">Languages</h3>
                 <Skills/>
+                <h3 style={{ fontFamily: 'imprima', color: '#96DEFF' }} className="mx-2 py-0 my-0 fs-1 px-5 align-self-center mt-3">Frameworks</h3>
+                <Frameworks/>
             </div>
     </div>
 }
