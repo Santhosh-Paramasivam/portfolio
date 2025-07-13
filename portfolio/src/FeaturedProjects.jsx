@@ -1,7 +1,7 @@
 import ProjectCard from './ProjectCard'
 
 function FeaturedProjects() {
-    return <div className="grid w-100" style={{height: '550px',overflowY: "scroll", scrollbarColor: '#f1f1f1 #6F66FD ', overflowX: 'clip' }}>
+    return <div className="grid w-100" style={{ height: '550px', overflowY: "scroll", scrollbarColor: '#f1f1f1 #6F66FD ', overflowX: 'clip' }}>
         <div className="row">
             <div className="col-xl-4 col-lg-6 col-sm-12 col-md-6 d-flex flex-row justify-content-center">
                 <ProjectCard
@@ -23,13 +23,13 @@ function FeaturedProjects() {
             </div>
             <div className="col sm-12 md-6 d-flex flex-row justify-content-center">
                 <ProjectCard
-                    title="CampusFind"
-                    image="campusfind.png"
-                    tools={['Flutter', 'Flask', 'Firebase', 'Arduino']}
-                    description={"Quickly locate coworkers and teammates within large campuses with this mobile app"}
+                    title="CampusFind Admin"
+                    image="campusfind_admin.jpeg"
+                    tools={['React', 'Spring Boot', 'Firebase']}
+                    description={"A full-stack website to register your organization and manage its presence on CampusFind"}
+                    link="FeedFist.git"
                 />
             </div>
-
         </div>
     </div>
 }
