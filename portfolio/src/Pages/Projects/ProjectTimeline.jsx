@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react"
-import ProjectCard from "./ProjectCard"
+import ProjectCard from "./Components/ProjectCard"
 
 function ProjectTimeline() {
     const canvasRef = useRef('')
@@ -70,7 +70,7 @@ function ProjectTimeline() {
     }, [])
 
     return <div style={{ overflowX: 'scroll', scrollbarColor: '#f1f1f1 #6F66FD ' }}>
-        <div className="d-flex flex-row" style={{width: '2700px', gap: '20px'}}>
+        <div className="d-flex flex-row" style={{ width: '2700px', gap: '20px' }}>
             <ProjectCard
                 title="CampusFind"
                 image="campusfind.png"

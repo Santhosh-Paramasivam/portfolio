@@ -1,4 +1,4 @@
-import ProjectCard from './ProjectCard'
+import ProjectCard from '../../Components/ProjectCard'
 
 function FeaturedProjects() {
     return <div className="grid w-100" style={{ height: '550px', overflowY: "scroll", scrollbarColor: '#f1f1f1 #6F66FD ', overflowX: 'clip' }}>
