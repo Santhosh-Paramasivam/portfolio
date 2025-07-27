@@ -1,8 +1,11 @@
+import './ProjectCarousel.css'
+import HDP from './ProjectCarouselCards/HDP'
+
 function ProjectCarousel() {
     return <div id="carouselExampleInterval" className='carousel slide' data-bs-ride='carousel' data-bs-theme='dark'>
         <div className='carousel-inner'>
-            <div className='carousel-item active '>
-                <img src='static/hdp.jpg' className="d-block w-100"></img>
+            <div className='carousel-item active'>
+                <HDP/>
             </div>
             <div className='carousel-item'>
                 <img src='static/hdp.jpg' className="d-block w-100"></img>
