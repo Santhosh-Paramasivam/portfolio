@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react"
-import ProjectCard from "./Components/ProjectCard"
+import ProjectCard from "../../Components/ProjectCard"
 
 function ProjectTimeline() {
     const canvasRef = useRef('')

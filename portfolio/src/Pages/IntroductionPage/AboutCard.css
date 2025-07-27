@@ -1,0 +1,15 @@
+.name {
+    max-height: 0;
+    padding: 0 0 0 0;
+    overflow: hidden;
+    transition: max-height 400ms ease-in-out, padding 400ms ease-in-out;
+}
+
+.name.active {
+    max-height: 360px;
+}
+
+#about-card {
+    --bs-card-bg: #15102E;
+    --bs-card-border-color: #6F66FD;
+}

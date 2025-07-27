@@ -13,8 +13,8 @@ import SkillsPage from './Pages/SkillsPage'
 function App() {
     return <div className='d-flex flex-column'>
         <Introduction />
-        <SkillsPage />
         <ProjectsPage />
+        <SkillsPage />
     </div>
 }
 export default App

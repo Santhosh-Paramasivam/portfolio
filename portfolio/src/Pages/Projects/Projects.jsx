@@ -1,6 +1,6 @@
 import './ProjectTabs.css'
 import { useState } from "react"
-import ProjectTimeline from "../../ProjectTimeline"
+import ProjectTimeline from "./ProjectTimeline"
 import FeaturedProjects from './FeaturedProjects'
 
 function Projects() {
