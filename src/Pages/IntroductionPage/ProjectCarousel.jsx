@@ -1,5 +1,6 @@
 import './ProjectCarousel.css'
 import HDP from './ProjectCarouselCards/HDP'
+import '../../Pages/Projects/ProjectTabs.css'
 
 function ProjectCarousel() {
     return <div id="carouselExampleInterval" className='carousel slide' data-bs-ride='carousel' data-bs-theme='dark'>

@@ -32,17 +32,8 @@ function ProjectTimeline() {
         const canvas = canvasRef.current;
         const context = canvas.getContext('2d')
 
-        // drawCircle(context, 50)
-        // drawHorizontalLine(context, 50, 100)
-        // drawVerticalLine(context, 100)
-        // drawHorizontalLine(context, 100, 150)
-        // drawVerticalLine(context, 150)
-        // drawHorizontalLine(context, 150, 200)
-        // drawVerticalLine(context, 200)
-        // drawHorizontalLine(context, 200, 250)
-
-        // drawCircle(context, 250)
         let years = ['June 2025', 'June 2024', 'June 2023', 'June 2022']
+        
         let scale = 200
         var y = 0
         for (let x = 50; x <= 50 + scale * 8; x += scale * 4) {
@@ -73,14 +64,14 @@ function ProjectTimeline() {
         <div className="d-flex flex-row" style={{ width: '2700px', gap: '20px' }}>
             <ProjectCard
                 title="CampusFind"
-                image="campusfind.png"
+                image="campusfind.jpg"
                 tools={['Flutter', 'Flask', 'Firebase', 'Arduino']}
                 description={"Quickly locate coworkers and teammates within large campuses with this mobile app"}
             />
             <canvas width={"50px"}></canvas>
             <ProjectCard
                 title="CampusFind"
-                image="campusfind.png"
+                image="campusfind.jpg"
                 tools={['Flutter', 'Flask', 'Firebase', 'Arduino']}
                 description={"Quickly locate coworkers and teammates within large campuses with this mobile app"}
             />
