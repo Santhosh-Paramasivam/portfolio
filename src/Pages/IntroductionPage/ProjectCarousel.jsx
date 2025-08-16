@@ -1,15 +1,16 @@
 import './ProjectCarousel.css'
 import HDP from './ProjectCarouselCards/HDP'
 import '../../Pages/Projects/ProjectTabs.css'
+import CarouselCard from '../../Components/CarouselCard'
 
 function ProjectCarousel() {
     return <div id="carouselExampleInterval" className='carousel slide' data-bs-ride='carousel' data-bs-theme='dark'>
         <div className='carousel-inner'>
             <div className='carousel-item active'>
-                <HDP/>
+                <CarouselCard caption='Python Desktop Application to predict heart disease via 11 health metrics' src="hdp.png"/>
             </div>
             <div className='carousel-item'>
-                <img src='static/hdp.jpg' className="d-block w-100"></img>
+                <CarouselCard caption='CampusFind : Flutter app to locate coworkers and teammates across large institutions' src="campusfind.png"/>
             </div>
             <div className='carousel-item'>
                 <img src='static/hdp.jpg' className="d-block w-100"></img>
