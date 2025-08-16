@@ -1,5 +1,4 @@
 import './ProjectCarousel.css'
-import HDP from './ProjectCarouselCards/HDP'
 import '../../Pages/Projects/ProjectTabs.css'
 import CarouselCard from '../../Components/CarouselCard'
 
@@ -11,9 +10,6 @@ function ProjectCarousel() {
             </div>
             <div className='carousel-item'>
                 <CarouselCard caption='CampusFind : Flutter app to locate coworkers and teammates across large institutions' src="campusfind.png"/>
-            </div>
-            <div className='carousel-item'>
-                <img src='static/hdp.jpg' className="d-block w-100"></img>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
