@@ -21,7 +21,6 @@ function IOTProjects() {
                     link="CampusFind-RFIDStation.git"
                 />
             </div>
-
         </div>
     </div>
 }
