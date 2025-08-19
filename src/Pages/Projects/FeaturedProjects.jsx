@@ -14,11 +14,11 @@ function FeaturedProjects() {
             </div>
             <div className="col sm-12 md-6 d-flex flex-row justify-content-center">
                 <ProjectCard
-                    title="FeedFirst"
+                    title="FeedFirst Web"
                     image="feedfirst_card.png"
-                    tools={['Python', 'Tkinter', 'MySQL']}
+                    tools={['React', 'Express', 'PostgreSQL']}
                     description={"Intuitive management system to bridge the gap between food banks and food insecure folks"}
-                    link="FeedFirst.git"
+                    link="FeedFirst2.git"
                 />
             </div>
             <div className="col sm-12 md-6 d-flex flex-row justify-content-center">
@@ -27,7 +27,7 @@ function FeaturedProjects() {
                     image="campusfind_admin.jpeg"
                     tools={['React', 'Spring Boot', 'Firebase']}
                     description={"A full-stack website to register your organization and manage its presence on CampusFind"}
-                    link="FeedFist.git"
+                    link="CampusFind-Admin_Backend.git"
                 />
             </div>
         </div>
