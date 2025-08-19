@@ -4,7 +4,7 @@ function Languages() {
     return <div className='card mx-5 mt-3' data-bs-theme='dark' id='project-card' style={{ backgroundColor: '#211A43' }}>
         <div className="grid mt-3">
             <div className="row px-3">
-                <Skill img="static/skills/java.png" alt="Java" pad="3" level={5} />
+                <Skill img={`${import.meta.env.BASE_URL}static/skills/java.png`} alt="Java" pad="3" level={5} />
                 <Skill img={"https://ico.vercel.app/python/white"} alt="Python" pad="3" level={5} />
                 <Skill img={"https://ico.vercel.app/html5/white"} alt="HTML5" pad="3" level={5}/>
                 <Skill img={"https://ico.vercel.app/c++/white"} alt="C++" pad="3" level={4} />

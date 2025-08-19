@@ -2,12 +2,12 @@ import './ProjectCard.css'
 
 function ProjectCard({ title, image, classes, tools, description, img_height, card_width, link }) {
     return <div className={classes ? "card project-card mb-2" + classes : "card project-card mb-3"} style={{ width: "20rem", height: "34rem" }}>
-        <img className="card-img-top" src={"static/" + image} height="350px" />
+        <img className="card-img-top" src={`${import.meta.env.BASE_URL}static/` + image} height="350px" />
         <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p>{description}</p>
             <a href={"https://github.com/Santhosh-Paramasivam/" + link} className='link-light link-underline-opacity-0'>
-                <img src='static/github.png' alt="GitHub Icon" width="20px" className='icon mx-2 mb-1' />
+                <img src={`${import.meta.env.BASE_URL}static/github.png`} alt="GitHub Icon" width="20px" className='icon mx-2 mb-1' />
                 Github
             </a>
         </div>
