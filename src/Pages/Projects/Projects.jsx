@@ -3,6 +3,7 @@ import { useState } from "react"
 import ProjectTimeline from "./ProjectTimeline"
 import FeaturedProjects from './FeaturedProjects'
 import FunProjects from './FunProjects'
+import IOTProjects from './IOTProjects'
 
 function Projects() {
     const [currentlyActive, setCurrentlyActive] = useState('featured')
@@ -23,14 +24,14 @@ function Projects() {
                 <button className={currentlyActive === 'fun' ? "nav-link active" : "nav-link"} onClick={() => activate('fun')}>Fun</button>
             </li>
             <li className="nav-item">
-                <button className={currentlyActive === 'iot' ? "nav-link active" : "nav-link"} onClick={() => activate('fun')}>Fun</button>
+                <button className={currentlyActive === 'iot' ? "nav-link active" : "nav-link"} onClick={() => activate('iot')}>IoT</button>
             </li>
         </ul>
         <div className="card-body">
             {/* {currentlyActive === 'timeline' && <ProjectTimeline />} */}
             {currentlyActive === 'featured' && <FeaturedProjects />}
             {currentlyActive === 'fun' && <FunProjects />}
-            {currentlyActive === 'iot' && <FunProjects />}
+            {currentlyActive === 'iot' && <IOTProjects />}
         </div>
     </div>
 }
