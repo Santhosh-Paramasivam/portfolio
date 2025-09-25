@@ -31,6 +31,27 @@ function FeaturedProjects() {
                 />
             </div>
         </div>
+        <div className='row'>
+           <div className="col sm-12 md-6 d-flex flex-row justify-content-center">
+                <ProjectCard
+                    title="FeedFirst"
+                    image="feedfirst_card.png"
+                    tools={['Python', 'Tkinter', 'MySQL']}
+                    description={"Intuitive management system to bridge the gap between food banks and food insecure folks"}
+                    link="FeedFirst.git"
+                />
+            </div>
+           <div className="col sm-12 md-6 d-flex flex-row justify-content-center">
+                <ProjectCard
+                    title="Heart Disease Prediction"
+                    image="heart-disease-prediction.png"
+                    tools={['Numpy','Pandas','Scikit-learn', 'Tkinter']}
+                    description={"Intuitive management system to bridge the gap between food banks and food insecure folks"}
+                    link="Heart_Disease_Prediction.git"
+                />
+            </div>
+
+        </div>
     </div>
 }
 
