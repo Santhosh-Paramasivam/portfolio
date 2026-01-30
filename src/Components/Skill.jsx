@@ -1,9 +1,9 @@
 import './Skill.css'
 
-function Skill({ sm, md, xl, img, alt, pad, level }) {
+function Skill({ sm, md, xl, img, alt, pad, level, extra }) {
 
     
-    return <div className={`col-sm-3 col-md-2 d-flex flex-row justify-content-center align-items-center mb-3`} data-toggle="tooltip" data-placement="right" title={alt}>
+    return <div className={`col-sm-3 col-md-2 d-flex flex-row justify-content-center align-items-center pb-3 mb-3` + extra} data-toggle="tooltip" data-placement="right" title={alt}>
         <div className={"card p-" + pad} style={{ width: '80px', height: '105px', backgroundColor: '#6F66FD' }}>
             <img src={img} alt={alt}></img>
             <div className={"row px-1 my-3"} style={{ width: '77px', height: '20px' }}>

@@ -1,7 +1,7 @@
 import Skill from '../../Components/Skill'
 
 function Languages() {
-    return <div className='card mx-5 mt-3' data-bs-theme='dark' id='project-card' style={{ backgroundColor: '#211A43' }}>
+    return <div className='card mx-5 mt-3' data-bs-theme='dark' id='project-card' style={{ backgroundColor: '#211A43', alignSelf: 'center'}}>
         <div className="grid mt-3">
             <div className="row px-3">
                 <Skill img={`${import.meta.env.BASE_URL}static/skills/java.png`} alt="Java" pad="3" level={5} />
