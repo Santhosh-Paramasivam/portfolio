@@ -1,6 +1,5 @@
 import './ProjectTabs.css'
 import { useState } from "react"
-import ProjectTimeline from "./ProjectTimeline"
 import FeaturedProjects from './FeaturedProjects'
 import FunProjects from './FunProjects'
 import IOTProjects from './IOTProjects'
@@ -14,10 +13,7 @@ function Projects() {
 
     return <div className='card mx-5 mt-4' data-bs-theme='dark' id='project-card'>
         <ul className="nav nav-tabs" style={{ "--bs-nav-link-padding-x": ".5rem" }} id='project-tabs'>
-            {/* <li className="nav-item">
-                <button className={currentlyActive === 'timeline' ? "nav-link active" : "nav-link"} onClick={() => activate('timeline')}>Timeline</button>
-            </li> */}
-            <li className="nav-item">
+           <li className="nav-item">
                 <button className={currentlyActive === 'featured' ? "nav-link active" : "nav-link"} onClick={() => activate('featured')}>Featured</button>
             </li>
             <li className="nav-item">
@@ -28,7 +24,6 @@ function Projects() {
             </li>
         </ul>
         <div className="card-body">
-            {/* {currentlyActive === 'timeline' && <ProjectTimeline />} */}
             {currentlyActive === 'featured' && <FeaturedProjects />}
             {currentlyActive === 'fun' && <FunProjects />}
             {currentlyActive === 'iot' && <IOTProjects />}
