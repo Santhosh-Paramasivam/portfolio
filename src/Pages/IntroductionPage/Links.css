@@ -1,0 +1,19 @@
+#resume-button {
+    --bs-btn-bg: white;
+    --bs-btn-hover-bg: #15102E;
+    --bs-btn-hover-color: white;
+    --bs-btn-active-border-color: white;
+    border: 1px solid;
+    font-family: 'imprima';
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+}
+
+#resume-link {
+    color: #15102E;
+}
+
+#resume-link:hover {
+    color: white;
+}

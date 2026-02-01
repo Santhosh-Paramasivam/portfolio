@@ -37,7 +37,6 @@ function IntroductionPage() {
                     Transparent and reliable, that's me!
                 </p>
             </div>
-
             <Links />
             <div className="flex-fill"></div>
         </div>
