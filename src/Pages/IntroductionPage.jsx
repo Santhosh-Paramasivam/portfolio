@@ -17,7 +17,7 @@ function IntroductionPage() {
     }, [])
 
     return <div className='d-flex flex-row' style={{ backgroundColor: "#15102E" }}>
-        <div className="d-flex flex-column justify-content-center px-5" style={{ width: "576px", height: "100vh", backgroundColor: "#15102E" }} onMouseOver={() => setAboutActive(true)} onMouseLeave={() => setAboutActive(false)}>
+        <div className="d-flex flex-column justify-content-center px-5" style={{ width: "576px", height: "100vh", backgroundColor: "#15102E" }}>
             <div className="flex-fill"></div>
             <Brand />
 
