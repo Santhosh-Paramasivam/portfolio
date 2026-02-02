@@ -23,7 +23,7 @@ function IntroductionPage() {
 
             <div id='about-card' className={aboutActive ? aboutCardClassNames + ' pt-3 pb-2 px-4 mb-0 mt-2 active' : aboutCardClassNames + ' invisible-text '}>
                 <h3 style={{ fontFamily: 'imprima', color: 'white' }} className="py-0 my-0 fs-4">About</h3>
-                <p style={{ fontFamily: 'imprima', color: 'white' }} className='mt-2 fs-5'>
+                <p style={{ fontFamily: 'imprima', color: 'white' }} className='mt-2 fs-6'>
                     I am a junior web developer focused on mastering end-to-end web development.
                     <br></br>
                     <br></br>
