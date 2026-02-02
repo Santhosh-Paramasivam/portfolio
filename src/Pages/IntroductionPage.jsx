@@ -13,7 +13,7 @@ function IntroductionPage() {
     useEffect(() => {
         setTimeout(() => {
             setAboutActive(true)
-        }, 1500)
+        }, 700)
     }, [])
 
     return <div className='d-flex flex-row' style={{ backgroundColor: "#15102E" }}>
