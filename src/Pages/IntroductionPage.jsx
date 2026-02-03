@@ -17,7 +17,7 @@ function IntroductionPage() {
     }, [])
 
     return <div className='d-flex flex-row justify-content-center' style={{ backgroundColor: "#15102E" }}>
-        <div className="d-flex flex-column px-5" style={{ width: "576px", height: "100vh", backgroundColor: "#15102E" }}>
+        <div className="d-flex flex-column px-5" style={{ width: "100%", height: "100vh", backgroundColor: "#15102E", maxWidth: '500px'}}>
             <div className="flex-fill"></div>
             <Brand />
 
