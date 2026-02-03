@@ -40,11 +40,6 @@ function IntroductionPage() {
             <Links />
             <div className="flex-fill"></div>
         </div>
-        <div className='container px-0 d-flex flex-column' style={{ backgroundColor: "#15102E" }}>
-            <div className='flex-fill'></div>
-            <ProjectCarousel />
-            <div className='flex-fill'></div>
-        </div>
     </div>
 }
 
