@@ -16,8 +16,8 @@ function IntroductionPage() {
         }, 700)
     }, [])
 
-    return <div className='d-flex flex-row' style={{ backgroundColor: "#15102E" }}>
-        <div className="d-flex flex-column justify-content-center px-5" style={{ width: "576px", height: "100vh", backgroundColor: "#15102E" }}>
+    return <div className='d-flex flex-row justify-content-center' style={{ backgroundColor: "#15102E" }}>
+        <div className="d-flex flex-column px-5" style={{ width: "576px", height: "100vh", backgroundColor: "#15102E" }}>
             <div className="flex-fill"></div>
             <Brand />
 
@@ -39,11 +39,6 @@ function IntroductionPage() {
             </div>
             <Links />
             <div className="flex-fill"></div>
-        </div>
-        <div className='container px-0 d-flex flex-column' style={{ backgroundColor: "#15102E" }}>
-            <div className='flex-fill'></div>
-            <ProjectCarousel />
-            <div className='flex-fill'></div>
         </div>
     </div>
 }
