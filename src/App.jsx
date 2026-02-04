@@ -9,6 +9,7 @@ function App() {
         <Introduction />
         <div style={{ backgroundColor: '#6F66FD', padding: 0.5, marginBottom: 10}}/>
         <SkillsPage />
+        <div style={{ backgroundColor: '#6F66FD', padding: 0.5, marginBottom: 10}}/>
         <ProjectsPage />
     </div>
 }
