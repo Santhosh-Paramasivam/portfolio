@@ -1,7 +1,7 @@
 import FeaturedProjects from "./Projects/FeaturedProjects";
 import FunProjects from "./Projects/FunProjects";
 import IOTProjects from "./Projects/IOTProjects";
-import "./Projects/Projects.css";
+import './Pages.css';
 
 function ProjectsPage() {
     return <div className="d-flex flex-column pt-2 pb-5" style={{ backgroundColor: "#15102E" }}>
