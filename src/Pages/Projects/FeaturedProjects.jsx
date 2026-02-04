@@ -1,9 +1,9 @@
 import ProjectCard from '../../Components/ProjectCard'
 
 function FeaturedProjects() {
-    return <div className="grid w-100" style={{ height: '550px', overflowY: "scroll", scrollbarColor: '#f1f1f1 #6F66FD ', overflowX: 'clip' }}>
-        <div className="row">
-            <div className="col-xl-4 col-lg-6 col-sm-12 col-md-6 d-flex flex-row justify-content-center">
+    return <div className="grid w-100" style={{ scrollbarColor: '#f1f1f1 #6F66FD '}}>
+        <div className="row row-cols-xs-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 px-4">
+            <div className="col d-flex flex-row justify-content-around">
                 <ProjectCard
                     title="CampusFind"
                     image="campusfind.jpg"
@@ -12,7 +12,7 @@ function FeaturedProjects() {
                     link="CampusFind.git"
                 />
             </div>
-            <div className="col sm-12 md-6 d-flex flex-row justify-content-center">
+            <div className="col d-flex flex-row justify-content-around">
                 <ProjectCard
                     title="FeedFirst Web"
                     image="feedfirst_card.png"
@@ -21,7 +21,7 @@ function FeaturedProjects() {
                     link="FeedFirst2.git"
                 />
             </div>
-            <div className="col sm-12 md-6 d-flex flex-row justify-content-center">
+            <div className="col d-flex flex-row justify-content-around">
                 <ProjectCard
                     title="CampusFind Admin"
                     image="campusfind_admin.jpeg"
@@ -30,9 +30,7 @@ function FeaturedProjects() {
                     link="CampusFind-Admin_Backend.git"
                 />
             </div>
-        </div>
-        <div className='row'>
-           <div className="col sm-12 md-6 d-flex flex-row justify-content-center">
+           <div className="col d-flex flex-row justify-content-around">
                 <ProjectCard
                     title="FeedFirst"
                     image="feedfirst_card.png"
@@ -41,7 +39,7 @@ function FeaturedProjects() {
                     link="FeedFirst.git"
                 />
             </div>
-           <div className="col sm-12 md-6 d-flex flex-row justify-content-center">
+           <div className="col d-flex flex-row justify-content-around">
                 <ProjectCard
                     title="Heart Disease Prediction"
                     image="heart-disease-prediction.png"
@@ -50,9 +48,9 @@ function FeaturedProjects() {
                     link="Heart_Disease_Prediction.git"
                 />
             </div>
-
+ 
         </div>
-    </div>
+   </div>
 }
 
 export default FeaturedProjects

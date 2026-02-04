@@ -1,8 +1,8 @@
 import './ProjectCard.css'
 
 function ProjectCard({ title, image, classes, tools, description, img_height, card_width, link }) {
-    return <div className={classes ? "card project-card mb-2" + classes : "card project-card mb-3"} style={{ width: "20rem", height: "34rem" }}>
-        <img className="card-img-top" src={`static/` + image} height="350px" />
+    return <div className={classes ? "card project-card mb-2" + classes : "card project-card mb-3"} style={{ width: "100%", maxWidth: 400, minWidth:300 }}>
+        <img className="card-img-top" src={`static/` + image} />
         <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p>{description}</p>
