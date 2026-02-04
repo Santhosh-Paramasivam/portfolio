@@ -1,9 +1,9 @@
 import ProjectCard from '../../Components/ProjectCard'
 
 function FunProjects() {
-    return <div className="grid w-100" style={{ height: '550px', overflowY: "scroll", scrollbarColor: '#f1f1f1 #6F66FD ', overflowX: 'clip' }}>
-        <div className="row">
-            <div className="col-xl-4 col-lg-6 col-sm-12 col-md-6 d-flex flex-row justify-content-center">
+    return <div className="grid w-100" style={{ scrollbarColor: '#f1f1f1 #6F66FD ' }}>
+        <div className="row row-cols-xs-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 px-4">
+            <div className="col d-flex flex-row justify-content-around">
                 <ProjectCard
                     title="Contact Management System"
                     image="cms.png"
@@ -12,7 +12,7 @@ function FunProjects() {
                     link="contact-ms.git"
                 />
             </div>
-            <div className="col-xl-4 col-lg-6 col-sm-12 col-md-6 d-flex flex-row justify-content-center">
+            <div className="col d-flex flex-row justify-content-around">
                 <ProjectCard
                     title="CLI Maze"
                     image="cli-maze.png"
@@ -21,7 +21,7 @@ function FunProjects() {
                     link="cli-maze.git"
                 />
             </div>
-            <div className="col-xl-4 col-lg-6 col-sm-12 col-md-6 d-flex flex-row justify-content-center">
+            <div className="col d-flex flex-row justify-content-around">
                 <ProjectCard
                     title="WisdomBot"
                     image="wb.jpg"
@@ -30,8 +30,6 @@ function FunProjects() {
                     link="WisdomBot.git"
                 />
             </div>
-
-
         </div>
     </div>
 }
