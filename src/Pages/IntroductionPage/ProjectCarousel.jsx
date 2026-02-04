@@ -1,5 +1,5 @@
 import './ProjectCarousel.css'
-import '../../Pages/Projects/ProjectTabs.css'
+// import '../../Pages/Projects/ProjectTabs.css'
 import CarouselCard from '../../Components/CarouselCard'
 
 function ProjectCarousel() {
