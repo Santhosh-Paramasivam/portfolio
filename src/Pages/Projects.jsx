@@ -1,5 +1,6 @@
 import FeaturedProjects from "./Projects/FeaturedProjects";
 import FunProjects from "./Projects/FunProjects";
+import IOTProjects from "./Projects/IOTProjects";
 import Projects from "./Projects/Projects";
 
 function ProjectsPage() {
@@ -9,7 +10,8 @@ function ProjectsPage() {
         <FeaturedProjects/>
         <h4 style={{ fontFamily: 'imprima', color: 'white' }} className="mx-2 py-0 mb-3 mt-2 fs-3 px-5 align-self-center">Fun</h4>
         <FunProjects/>
-        <h4 style={{ fontFamily: 'imprima', color: 'white' }} className="mx-2 py-0 mb-0 mt-2 fs-3 px-5 align-self-center">Internet of Things</h4>
+        <h4 style={{ fontFamily: 'imprima', color: 'white' }} className="mx-2 py-0 mb-3 mt-2 fs-3 px-5 align-self-center">Internet of Things</h4>
+        <IOTProjects/>
         <Projects />
     </div>
 }
