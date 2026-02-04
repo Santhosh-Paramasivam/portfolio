@@ -1,3 +1,10 @@
 .project-card {
-    --bs-card-bg: #6F66FD;
+    /* --bs-card-bg: #6F66FD; */
+    --bs-card-bg: #211A43;
+    --bs-card-border-color: #6F66FD;
+}
+
+.technologies-used {
+    color: #6F66FD;
+    border: 1px solid #6F66FD;
 }
