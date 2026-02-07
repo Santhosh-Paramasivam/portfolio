@@ -30,16 +30,7 @@ function FeaturedProjects() {
                     link="CampusFind-Admin_Backend.git"
                 />
             </div>
-           <div className="col d-flex flex-row justify-content-around">
-                <ProjectCard
-                    title="FeedFirst"
-                    image="feedfirst_card.png"
-                    tools={['Python', 'Tkinter', 'MySQL']}
-                    description={"Intuitive management system to bridge the gap between food banks and food insecure folks"}
-                    link="FeedFirst.git"
-                />
-            </div>
-           <div className="col d-flex flex-row justify-content-around">
+          <div className="col d-flex flex-row justify-content-around">
                 <ProjectCard
                     title="Heart Disease Prediction"
                     image="heart-disease-prediction.png"
