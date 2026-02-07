@@ -27,19 +27,10 @@ function FeaturedProjects() {
                     image="campusfind_admin.jpeg"
                     tools={['React', 'Spring Boot', 'Firebase']}
                     description={"A full-stack website to register your organization and manage its presence on CampusFind"}
-                    link="CampusFind-Admin_Backend.git"
+                    links = {[{ type:'Github', link:"campusfind-admin-frontend", title:"Frontend" }, { type: 'Github', link:"campusfind-admin-backend.git", title: "Backend" }]}
                 />
             </div>
-           <div className="col d-flex flex-row justify-content-around">
-                <ProjectCard
-                    title="FeedFirst"
-                    image="feedfirst_card.png"
-                    tools={['Python', 'Tkinter', 'MySQL']}
-                    description={"Intuitive management system to bridge the gap between food banks and food insecure folks"}
-                    link="FeedFirst.git"
-                />
-            </div>
-           <div className="col d-flex flex-row justify-content-around">
+          <div className="col d-flex flex-row justify-content-around">
                 <ProjectCard
                     title="Heart Disease Prediction"
                     image="heart-disease-prediction.png"
