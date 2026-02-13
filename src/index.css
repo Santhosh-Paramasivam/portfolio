@@ -9,3 +9,7 @@
 #root {
     overflow-x: clip;
 }
+
+html {
+    background-color: #15102E;
+}
