@@ -5,3 +5,7 @@
 .icon:hover {
     transform: scale(1.05);    
 }
+
+#root {
+    overflow-x: clip;
+}
