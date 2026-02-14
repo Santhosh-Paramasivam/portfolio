@@ -19,6 +19,12 @@ function ProjectCard({ title, image, classes, tools, description, img_height, ca
                     </a>
                     </div>
                     </>
+                    if(_.type === 'Youtube') return <><div className="mt-2"><a href={"https://www.youtube.com/watch?v=" + _.link} className='link-light link-underline-opacity-0'>
+                    <img src={`https://cdn.simpleicons.org/youtube/white`} alt="Youtube Icon" width="20px" className='icon mx-2 mb-1' />
+                    {_.title}
+                    </a>
+                    </div>
+                    </>
                 })    
             }
         </div>

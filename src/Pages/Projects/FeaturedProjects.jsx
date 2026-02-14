@@ -8,8 +8,8 @@ function FeaturedProjects() {
                     title="CampusFind"
                     image="campusfind.jpg"
                     tools={['Flutter', 'Flask', 'Firebase', 'Arduino']}
-                    description={"Quickly locate coworkers and teammates within large campuses with this mobile app"}
-                    link="CampusFind.git"
+                    description={<p>A cross-platform mobile app to locate particular individuals across large campuses.<br/><br/>Frustrated by spending hours searching for professors in my college, I created this app to locate persons of interest with a couple taps on a mobile device.</p>}
+                    links={[ { type:"Github", title:"Github", link: "campusfind.git" }, { type: "Youtube", title: "Demo #2", link:"Pch4oz6hjPw" } ]}
                 />
             </div>
             <div className="col d-flex flex-row justify-content-around">
